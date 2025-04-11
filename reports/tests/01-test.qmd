@@ -171,7 +171,9 @@ de um ativo e seu risco sistemático, medido pelo beta [@sharpe1964].
 
 ## Equação Fundamental do CAPM
 
-$$E(R_i) = R_f + \beta_i [E(R_m) - R_f]$$
+$$
+E(R_i) = R_f + \beta_i [E(R_m) - R_f]
+$$
 
 Sendo:
 
@@ -752,6 +754,32 @@ Markowitz se complementam na análise de investimentos.
 premissas e limitações de cada modelo teórico apresentado.
 
 Boa sorte na prova!
+
+
+## Inserindo Células de Código 
+
+A @fig-glinha exibe um gráfico de linha de uma variável aleatória com 
+distribuição normal padronizada.
+
+```{r}
+#| echo: false
+#| label: fig-glinha
+#| fig-cap: "Gráfico de linha de uma VA com distribuição normal."
+
+# simulando uma VA com distr. normal
+retornos <- rnorm(1000)
+
+# grafico dos retornos simulados
+plot(retornos, type = "l")
+grid()
+```
+
+Segundo @sharpe1964
+
+O modelo CAPM foi desenvolvido em dois artigos clássicos de Finanças 
+[@sharpe1964; @markowitz1952].
+
+
 
 
 
